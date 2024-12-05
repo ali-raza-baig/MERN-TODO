@@ -1,11 +1,17 @@
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Login from './components/auth/Login';
+import Signup from './components/auth/Signup';
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1 className="text-6xl text-center">Hello Mern App</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect to /login */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
