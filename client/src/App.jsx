@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
+import Otp from './components/auth/Otp';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect to /login */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/otp" element={<Otp />} />
       </Routes>
     </Router>
   );
