@@ -1,28 +1,48 @@
-import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="max-w-sm bg-[#f1f7fe] overflow-hidden rounded-lg text-[#010101]">
-        <form className="relative flex flex-col p-8 gap-4 text-center">
-          <span className="font-bold text-xl">Sign up</span>
-          <span className="text-base text-[#666]">Create a free account with your email.</span>
-          
-          <div className="overflow-hidden rounded-md bg-white my-4 w-full">
-            <input type="text" className="bg-transparent border-0 outline-none h-10 w-full border-b border-[#eee] text-sm px-4" placeholder="Full Name" />
-            <input type="email" className="bg-transparent border-0 outline-none h-10 w-full border-b border-[#eee] text-sm px-4" placeholder="Email" />
-            <input type="password" className="bg-transparent border-0 outline-none h-10 w-full border-b border-[#eee] text-sm px-4" placeholder="Password" />
-          </div>
-
-          <button className="bg-[#0066ff] text-white border-0 rounded-full py-2 px-4 text-lg font-semibold cursor-pointer transition-all hover:bg-[#005ce6]">Sign up</button>
-        </form>
-
-        <div className="py-4 text-sm bg-[#e0ecfb] shadow-md">
-          <p>Have an account? <Link to="/login" className="font-bold text-[#0066ff] transition-all hover:text-[#005ce6] hover:underline">Log in</Link></p>
+    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <form className="bg-white p-6 max-w-sm w-full rounded-lg shadow-lg">
+        <p className="text-lg font-semibold text-center text-black mb-4">
+          Sign Up
+        </p>
+        <div className="relative mb-4">
+          <input
+            type="Name"
+            placeholder="Enter Name"
+            className="w-full p-4 border border-gray-300 rounded-lg shadow-sm text-sm"
+          />
         </div>
-      </div>
+        <div className="relative mb-4">
+          <input
+            type="email"
+            placeholder="Enter email"
+            className="w-full p-4 border border-gray-300 rounded-lg shadow-sm text-sm"
+          />
+        </div>
+        <div className="relative mb-4">
+          <input
+            type="password"
+            placeholder="Enter password"
+            className="w-full p-4 border border-gray-300 rounded-lg shadow-sm text-sm"
+          />
+        </div>
+        <div className="relative mb-6">
+          <input
+            type="password"
+            placeholder="Confirm password"
+            className="w-full p-4 border border-gray-300 rounded-lg shadow-sm text-sm"
+          />
+        </div>
+        <button
+          type="submit"
+          className="w-full py-3 px-6 bg-indigo-600 text-white text-sm font-medium rounded-lg uppercase"
+        >
+          Sign up
+        </button>
+      </form>
     </div>
   );
-}
+};
 
 export default Signup;
