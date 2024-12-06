@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
+      <div className="w-1/2 flex flex-col ">
+        <h1 className="text-6xl text-orange-600">Meganum</h1>
+        <p className="w-2/3 text-lg m-2">We are going to develop Mern Stack Application with Seniour developer Maaz-Irfan is Ai-enthusiast who is well known in this industry</p>
+      </div>
       <form className="bg-white p-6 max-w-sm w-full rounded-lg shadow-lg">
         <p className="text-lg font-semibold text-center text-black mb-4">
           Sign in to your account
